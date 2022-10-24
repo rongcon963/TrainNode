@@ -31,6 +31,7 @@ class Application {
       const middleware: any = Reflect.getMetadata(MetadataKeys.Middleware, controllerClass);
 
       const param : any = Reflect.getMetadata(MetadataKeys.Param, controllerClass);
+      console.log(param);
       const exRouter = express.Router();
 
       routers.forEach(({ method, path, handlerName}) => {

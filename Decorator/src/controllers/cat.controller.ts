@@ -32,7 +32,7 @@ export default class CatController {
   @Get('/:name')
   public findByName(@Param('name') name: string, res: Response): unknown {
     //const { name } = req.params;
-    console.log(`findByName`);
+    console.log(`findByName1`);
     
     const foundCat = this.cats.find((c) => c.name === name);
     if (foundCat) {
